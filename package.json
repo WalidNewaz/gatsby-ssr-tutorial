@@ -9,20 +9,22 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gserve",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "start:prod": "gserve -p 8000"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",
     "autoprefixer": "^10.4.19",
+    "fastify": "^4.27.0",
     "gatsby": "^5.13.3",
+    "gatsby-plugin-fastify": "^0.13.3",
     "gatsby-plugin-google-gtag": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-mdx": "^5.13.1",
     "gatsby-plugin-postcss": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-sitemap": "^6.13.1",
